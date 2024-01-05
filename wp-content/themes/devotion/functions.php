@@ -83,9 +83,18 @@ function devotion_front_page_template( $template ) {
 }
 add_filter( 'frontpage_template',  'devotion_front_page_template' );
 
+/* Redirect on theme activation */
+add_action( 'admin_init', 'devotion_theme_activation_redirect' );
+
 /**
- * Customizer additions.
+ * Redirect to "Install Plugins" page on activation
  */
+function devotion_theme_activation_redirect() {
+	global $pagenow;
+	if ( "themes.php" == $pagenow && is_admin() && isset( $_GET['activated'] ) ) {
+		wp_redirect( esc_url_raw( add_query_arg( 'page', 'devotion-theme', admin_url( 'themes.php' ) ) ) );
+	}
+}
 
 // Block Patterns.
 require get_template_directory() . '/block-patterns.php';

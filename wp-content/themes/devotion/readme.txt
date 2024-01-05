@@ -4,7 +4,7 @@ Contributors: Flythemes
 Requires at least: 6.4
 Tested up to: 6.4
 Requires PHP: 7.0
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: holiday, e-commerce, blog, one-column, two-columns, three-columns, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, right-sidebar, custom-background, wide-blocks
@@ -42,3 +42,6 @@ For any help you can mail us at support[at]flythemes.net
 
 = 1.0 =
 *      Initial version release.
+
+= 1.0.1 =
+*      Minor CSS changes.
